@@ -16,8 +16,8 @@
 
 import random
 import string
-start = ''.join(random.choice(string.ascii_letters) for i in range(3))
-end = ''.join(random.choice(string.ascii_letters) for i in range(3))
+start = ''.join(random.choice(string.ascii_letters + string.digits + string.punctuation) for i in range(3))
+end = ''.join(random.choice(string.ascii_letters + string.digits + string.punctuation) for i in range(3))
 
 
 a = input("Do you want to coding or decoding: ")
